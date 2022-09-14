@@ -1,0 +1,327 @@
+
+is_45=True
+print(is_45)
+def age_converter():
+    print('time to evalute your age')
+    print('now lets begin')
+    birthday_date=input('tell me the year you were born ')
+    print(type(bool(True)))
+    age=2022-float(birthday_date)
+    print('your age is '+str(age))
+
+
+print('welcome to the pounds to kilograms converter')
+pounds=input('please tell us your weight in pounds ')
+kg=int(pounds)/2
+print('your weight in kgs is '+str(kg))
+
+print('''He's my "friend"''')
+
+value= '''
+Hello
+
+This is mark from the industry your searching
+Thank you, with love Mark'''
+print(value)
+
+course= 'The course you need'
+print(course[:-2])
+
+first='John'
+last='Smith'
+h=f'{first} {last} likes dick'
+print(h)
+
+control='Play Station'
+print(control)
+print(len(control))
+print(control[0:12])
+control.upper()
+print(control.upper())
+print(control.lower())
+print(control.find('a'))
+print(control.title())
+jonathan='Some men are evil'
+print(jonathan)
+print(jonathan.replace('Some','All'))
+hello_world= 'El pepe'
+print(hello_world)
+print(hello_world.upper())
+r='rodry likes to counter attack'
+print('rodry' in r)
+
+import math
+
+print(5**2)
+x=30
+x=30**2
+print(x)
+x=20
+x**=2
+print(x)
+x=30---2
+print(x)
+x=30--2
+print(x)
+print(math.sqrt(9))
+print(math.log10(10))
+print(((3+2)*3)*2)
+print(math.sin(30))
+print(round(abs(-2.6)))
+
+mg=input('The value of Mg is ')
+print(float(mg)/24/(float(mg)/24))
+
+print('Welcome to the automatize compound calculator')
+mg=input('The value of Mg is ')
+s=input('The value of S is ')
+o=input('The value of O is ')
+mg_s=round(float(mg)/24/(float(mg)/24))
+s_s=round(float(s)/32/(float(mg)/24))
+o_s=round(float(o)/16/(float(mg)/24))
+print(f'The compound is Mg{str(mg_s)}S{str(s_s)}O{str(o_s)}')
+
+is_hot =False
+if is_hot:
+    (print('hello'))
+    (print('goodbye'))
+print('pd: suck me pls')
+
+print('''Vamos a hacer un juego,
+      te voy a hacer una pregunta
+      y la tenes que adivinar, tenes 5 intentos.
+      Si la adivinas te gasto un helado''')
+capital = 'Amsterdam'
+guess_count = 0
+guess_limit = 5
+while guess_count < 5:
+    guess_count += 1
+    guess_capital= input('Cual es la capital de Paises bajos? ')
+    if guess_capital.capitalize() == capital:
+        print('No te la creo, te lo ganaste:( !')
+        break
+else:
+    print('JAJAJAJA perdiste xd')
+
+game_command = input('>')
+while game_command.lower != 'quit':
+    if game_command.lower == 'start':
+        pri opped')
+else:
+    print("i don't understand you")
+
+
+
+
+help_ = 'help'
+stop_ = 'stop'
+start_ = 'start'
+quit_ = 'quit'
+tries = 0
+while tries < 5:
+    starting_command = input('> beg for help ')
+    print('''
+    Start - To start the car
+    Stop  - To stop the car
+    Quit  - To exit
+    ''')
+    while tries < 5:
+        game_command = input('> what do you want ')
+        if game_command.lower() == 'start':
+            print('car started')
+        elif game_command.lower() == 'stop':
+            print('car stopped')
+        elif game_command.lower() == 'quit':
+            break
+        else:
+            print("i don't understand you")
+else:
+    print("you quit")
+
+
+
+
+help_ = 'help'
+stop_ = 'stop'
+start_ = 'start'
+quit_ = 'quit'
+tries = 0
+starting_command = input('> beg for help ')
+while starting_command.lower() == 'help':
+    print('''
+    Start - To start the car
+    Stop  - To stop the car
+    Quit  - To exit
+    ''')
+    game_command = input('> what do you want ')
+    if game_command.lower() == 'start':
+        print(input('car started'))
+    elif game_command.lower() == 'stop':
+        print(input('car stopped'))
+    elif game_command.lower() == 'quit':
+        print(':(')
+        break
+    else:
+        print(input("don't understand you"))
+else:
+    print("now you don't play for trying to be funny >:(")
+
+
+
+Version Completa
+tries = 0
+print('Welcome to the car game')
+while tries < 5:
+    starting_command = input('> beg for help ')
+    while starting_command.lower() == 'help':
+        print('''
+        Start - To start the car
+        Stop  - To stop the car
+        Quit  - To exit
+        ''')
+        game_command = input('> what do you want ')
+        if game_command.lower() == 'start':
+            print(input('car started'))
+        elif game_command.lower() == 'stop':
+            print(input('car stopped'))
+        elif game_command.lower() == 'quit':
+            print('you quit :(')
+            tries = 6
+            break
+        else:
+            print(input("don't understand you"))
+
+
+
+Version en espanol
+
+tries = 0
+print('Bienvenido al juego del carrito')
+while tries < 5:
+    starting_command = input('> RUEGA POR MI AYUDA! ')
+    while starting_command.lower() == 'ayuda':
+        print('''
+        Iniciar - Para iniciar el auto
+        Parar   - Para parar el auto
+        Salir   - Para Salir del juego
+        ''')
+        game_command = input('> Elige una opcion ')
+        if game_command.lower() == 'iniciar':
+            print(input('El carro ha iniciado'))
+        elif game_command.lower() == 'parar':
+            print(input('El carro ha parado'))
+        elif game_command.lower() == 'salir':
+            print('Saliste! :(')
+            tries = 6
+            break
+        else:
+            print(input('escriba bien'))
+
+
+command = ""
+while True:
+    command = input('> ').lower()
+    if command == 'start':
+        print('car started')
+        command = input('> ')
+        if command == 'start':
+            print('car already started')
+    elif command == 'stop':
+        print('car stopped')
+        command = input('> ')
+        if command == 'stop':
+            print('car already stopped')
+    elif command == 'help':
+        print('''
+start - to start the car
+stop - to stop the car
+quit - to quit the game
+''')
+    elif command == 'quit':
+        break
+    else:
+        print("i don't understand you")
+
+i = len(phone)
+for b in range(i):
+    c = numbers[int(phone[b])]
+    print('')
+
+def car_game():
+    command = ""
+    print("welcome to the car game, please enter 'help' ")
+    while True:
+        command = input('> ').lower()
+        if command == 'start':
+            print('car started')
+            command = input('> ')
+            if command == 'start':
+                print('car already started')
+        elif command == 'stop':
+            print('car stopped')
+            command = input('> ')
+            if command == 'stop':
+                print('car already stopped')
+        elif command == 'help':
+            print('''
+    start - to start the car
+    stop - to stop the car
+    quit - to quit the game
+    ''')
+        elif command == 'quit':
+            break
+        else:
+            print("speak well bastard")
+
+
+
+class Hello:
+    def __init__(self, number, x, y):
+        self.super = number * 2
+        self.x = x
+        self.y = y
+
+    def hello_function(self):
+        print(f'hello im a function {self.super}')
+
+
+hello = Hello(5, 7, 3)
+hello.hello_function()
+x = hello.x
+y = hello.y
+print(f'({x}, {y})')
+
+
+from modules import find_max
+numbers = [3, 7, 8, 4, 5]
+print(find_max(numbers))
+
+
+from modules import Hello
+hola = Hello(3, 8)
+print(hola.x)
+print(hola.super)
+
+import random
+print(random.random())
+for i in range(5):
+    print(random.randint(1, 10))
+house_chores = ['Johan', 'Steven', 'Lina']
+the_one = random.choice(house_chores)
+print(the_one)
+
+class Dice:
+    def roll(self):
+        import random
+        x = random.randint(1, 6)
+        y = random.randint(1, 6)
+        return x, y
+
+
+dice = Dice()
+print(dice.roll())
+
+from pathlib import Path
+path = Path("perry's company")
+print(path.exists())
+path.rmdir()
